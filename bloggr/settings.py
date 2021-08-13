@@ -29,8 +29,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ["127.0.0.1"]
 
 # Application definition
 
@@ -42,9 +41,21 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "app",
+    "app.users",
     "rest_framework",
     "drf_yasg",
+    "graphene_django",
 ]
+
+# Tell Django about the custom `User` model we created. The string
+# `users.User` tells Django we are referring to the `User` model in
+# the `users` module. This module is registered above in a setting
+# called `INSTALLED_APPS`.
+AUTH_USER_MODEL = "users.User"
+
+GRAPHENE = {
+    "SCHEMA": "app.users.schema.schema",
+}
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
