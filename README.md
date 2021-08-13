@@ -49,13 +49,12 @@ This repository implemented using Django, contains the API endpoint and models f
     ```
 * Create a .env file to where you'll put the environment variables
     ```bash
-    touch .env
+    touch .e
     ```
 
 We Currently use the following env variables:
-    * DATABASE_URL - Used by [dj_database_url](https://github.com/kennethreitz/dj-database-url#url-schema) to connect to the database.
-    
-    * SECRET_KEY - String of random characters used to provide cryptographic signing for [Django](https://docs.djangoproject.com/en/2.1/ref/settings/#std:setting-SECRET_KEY) projects.
+    1. DATABASE_URL - Used by [dj_database_url](https://github.com/kennethreitz/dj-database-url#url-schema) to connect to the database.  
+    2. SECRET_KEY - String of random characters used to provide cryptographic signing for [Django](https://docs.djangoproject.com/en/2.1/ref/settings/#std:setting-SECRET_KEY) projects.
 
 ### Project setup
 #### Manual setup
