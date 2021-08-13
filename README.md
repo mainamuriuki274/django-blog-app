@@ -31,7 +31,7 @@ This repository implemented using Django, contains the API endpoint and models f
 
 ## Local Development
 ### Env Setup
-##Run the following commands in your terminal
+## Run the following commands in your terminal
 * Clone the repo:
     ```bash
     git clone https://github.com/mainamuriuki274/django-blog-app.git
