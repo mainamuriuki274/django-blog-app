@@ -14,7 +14,7 @@ schema_view = get_schema_view(
     openapi.Info(
         title="BLOGGR API",
         default_version="v1",
-        description="Tech Talk!",
+        description="Lets Talk!",
         license=openapi.License(name="BSD License"),
     ),
     public=True,
