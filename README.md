@@ -84,4 +84,4 @@ We Currently use the following env variables:
     python manage.py runserver
     ```
 - Yay! Congratulations your app should be running at [http://127.0.0.1:8000/app/api/v1/graphql/](http://127.0.0.1:8000/app/api/v1/graphql/)
-- You can now log into the admin dashboard on [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/)
+- You can also log into the admin dashboard on [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/)
