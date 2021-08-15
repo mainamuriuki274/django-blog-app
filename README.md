@@ -50,7 +50,7 @@ This repository implemented using Django, contains the API endpoint and models f
     ```
 * Create a .env file to where you'll put the environment variables
     ```bash
-    touch .e
+    touch .env
     ```
 
 We Currently use the following env variables:  
