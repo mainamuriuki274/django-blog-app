@@ -45,9 +45,6 @@ INSTALLED_APPS = [
     "rest_framework",
     "drf_yasg",
     "graphene_django",
-    "graphql_jwt.refresh_token.apps.RefreshTokenConfig",
-    "graphql_auth",
-    "django_filters",
 ]
 
 
