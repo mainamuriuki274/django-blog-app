@@ -31,8 +31,11 @@ class UserManager(BaseUserManager):
         if not kwargs.get("password"):
             raise ValueError("Password is required.")
 
-        user = self.model(username=username, email=self.normalize_email(email))
-        user.set_password(password)
+        user = self.model(
+            username=username,
+            email=self.normalize_email(email),
+            password=password,
+        )
         user.save()
 
         return user
