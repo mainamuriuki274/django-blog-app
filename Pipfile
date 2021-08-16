@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "==3.2.6"
+Django = "==3.2.6"
 python-dotenv = "==0.19.0"
 dj-database-url = "==0.5.0"
 djangorestframework = "==3.12.4"
@@ -19,6 +19,9 @@ pre-commit = "==2.14.0"
 pytest-django = "==4.4.0"
 pytest-cov = "==2.12.1"
 pytest = "==6.2.4"
+pdbpp = "==0.10.3"
+mixer = "==7.1.2"
+isort = "==5.9.3"
 
 [requires]
 python_version = "3.9"

@@ -1,16 +1,17 @@
 # app urls
 from django.conf import settings
 from django.urls import path
-from rest_framework import permissions
+from django.views.decorators.csrf import csrf_exempt
 from drf_yasg import openapi
 from drf_yasg.views import get_schema_view
-from rest_framework.routers import DefaultRouter
 from graphene_django.views import GraphQLView
+from rest_framework import permissions
+from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
 
 urlpatterns = [
-    path("graphql/", GraphQLView.as_view(graphiql=True)),
+    path("graphql/", csrf_exempt(GraphQLView.as_view(graphiql=True))),
 ]
 
 schema_view = get_schema_view(
