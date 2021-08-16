@@ -28,7 +28,7 @@ class UserManager(BaseUserManager):
         if not email:
             raise ValueError("Email address is required.")
 
-        if not kwargs.get("password"):
+        if not password:
             raise ValueError("Password is required.")
 
         user = self.model(username=username, email=self.normalize_email(email))

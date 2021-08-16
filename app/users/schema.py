@@ -1,6 +1,6 @@
 import graphene
-from graphql_auth.schema import UserQuery, MeQuery
 from graphql_auth import mutations
+from graphql_auth.schema import MeQuery, UserQuery
 
 
 class AuthMutation(graphene.ObjectType):
@@ -11,6 +11,7 @@ class AuthMutation(graphene.ObjectType):
     resend_activation_email = mutations.ResendActivationEmail.Field()
     send_password_reset_email = mutations.SendPasswordResetEmail.Field()
     password_reset = mutations.PasswordReset.Field()
+    archive_account = mutations.ArchiveAccount.Field()
 
 
 class Query(UserQuery, MeQuery, graphene.ObjectType):
@@ -18,6 +19,11 @@ class Query(UserQuery, MeQuery, graphene.ObjectType):
 
 
 class Mutation(AuthMutation, graphene.ObjectType):
+    """
+    This class contains the fields of models that are supposed to be
+    mutated.
+    """
+
     pass
 
 
