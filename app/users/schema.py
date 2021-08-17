@@ -1,6 +1,10 @@
+import math
+
 import graphene
 from graphql_auth import mutations
 from graphql_auth.schema import MeQuery, UserQuery
+
+print(math.sin)
 
 
 class AuthMutation(graphene.ObjectType):
